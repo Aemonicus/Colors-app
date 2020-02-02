@@ -53,13 +53,22 @@
 
 .box-content {
   position: absolute;
-  padding: 10px;
-  width: 100%;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  width: calc(100% - 10px);
   left: 0;
   bottom: 0;
   color: black;
   letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+.light-text {
+  color: white;
+}
+
+.ColorBox .dark-text {
+  color: black;
 }
 
 .see-more {
