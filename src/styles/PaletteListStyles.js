@@ -44,7 +44,8 @@ export default {
     "& a": {
       color: "white",
       textDecoration: "none",
-      fontSize: "20px"
+      fontSize: "1.5rem",
+      fontWeight: "bold"
     }
   },
   palettes: {
