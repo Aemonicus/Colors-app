@@ -1,5 +1,7 @@
+import sizes from "./size"
 import { DRAWER_WIDTH } from "../constants"
 const drawerWidth = DRAWER_WIDTH;
+
 
 const styles = theme => ({
   root: {
@@ -29,14 +31,26 @@ const styles = theme => ({
   menuButton: {
     marginLeft: 12,
     marginRight: 20,
-    color: "black"
+    color: "black",
+    [sizes.down("xs")]: {
+      margin: 0
+    }
   },
+
   navBtns: {
-    marginRight: "1rem"
+    marginRight: "1rem",
+    [sizes.down("xs")]: {
+      marginRight: 0
+    }
   },
+
   button: {
-    margin: "0 0.5rem"
+    margin: "0 0.5rem",
+    [sizes.down("xs")]: {
+      margin: 0
+    }
   }
+
 })
 
 export default styles
