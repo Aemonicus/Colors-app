@@ -13,13 +13,14 @@ export default {
   },
   root: {
     backgroundColor: "blue",
-    height: "100vh",
+    height: "100%",
     display: "flex",
     alignItems: "flex-start",
     justifyContent: "center",
     // background by SVGBackgrounds.com
     backgroundColor: "#483ae1",
     backgroundImage: `url(${bg})`,
+    backgroundRepeat: "repeat",
     overflow: "scroll"
   },
   container: {
@@ -51,17 +52,16 @@ export default {
   palettes: {
     boxSizing: "border-box",
     width: "100%",
-    // height: "100vh",
     display: "grid",
     gridTemplateColumns: "repeat(3, 30%)",
-    gridGap: "2.5rem",
+    gridGap: "4rem",
     [sizes.down("md")]: {
       gridTemplateColumns: "repeat(2, 50%)",
-
+      gridGap: "2rem"
     },
     [sizes.down("xs")]: {
       gridTemplateColumns: "repeat(1, 100%)",
-      gridGap: "1.5rem",
+      gridGap: "2rem",
     }
   }
 }
